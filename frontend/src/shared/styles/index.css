@@ -1,0 +1,36 @@
+@import "tailwindcss";
+
+@theme {
+  --color-brand-50: hsl(210 40% 98%);
+  --color-brand-100: hsl(210 40% 96.1%);
+  --color-brand-200: hsl(210 40% 90.2%);
+  --color-brand-300: hsl(210 40% 80.4%);
+  --color-brand-400: hsl(210 40% 70.6%);
+  --color-brand-500: hsl(210 40% 56.1%);
+  --color-brand-600: hsl(210 40% 45.1%);
+  --color-brand-700: hsl(210 40% 36.1%);
+  --color-brand-800: hsl(210 40% 29.8%);
+  --color-brand-900: hsl(210 40% 24.1%);
+  --color-brand-950: hsl(210 40% 12.2%);
+}
+
+@layer base {
+  :root {
+    --font-sans: 'Inter', system-ui, -apple-system, sans-serif;
+  }
+}
+
+@keyframes slideIn {
+  from {
+    transform: translateY(1rem);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.animate-slide-in {
+  animation: slideIn 0.2s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
