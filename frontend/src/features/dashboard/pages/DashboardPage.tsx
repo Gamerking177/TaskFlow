@@ -169,7 +169,7 @@ export const DashboardPage: React.FC = () => {
             /* Onboarding On-Empty View */
             <div className="rounded-xl border border-dashed border-zinc-300 bg-white dark:border-zinc-800 dark:bg-zinc-900 p-12 text-center transition-colors">
               <div className="mx-auto flex h-12 w-12 items-center justify-center rounded-full bg-zinc-100 dark:bg-zinc-850">
-                <Sparkles className="h-6 w-6 text-zinc-900 dark:text-zinc-55" />
+                <Sparkles className="h-6 w-6 text-zinc-900 dark:text-zinc-50" />
               </div>
               <h3 className="mt-4 text-lg font-semibold text-zinc-900 dark:text-zinc-50">Welcome to TaskFlow!</h3>
               <p className="mt-2 text-sm text-zinc-500 dark:text-zinc-400 max-w-md mx-auto">
