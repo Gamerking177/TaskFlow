@@ -47,11 +47,7 @@ app.use(compression());
 
 // Health check endpoint
 app.get('/health', (req: Request, res: Response) => {
-  res.status(200).json({
-    success: true,
-    message: 'TaskFlow API Server is running healthily',
-    timestamp: new Date().toISOString(),
-  });
+  res.status(200).send('TaskFlow API Server is running healthily');
 });
 
 // API Routes
